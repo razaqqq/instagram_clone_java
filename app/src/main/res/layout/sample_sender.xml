@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/chat_buble_right_tail_sender"
+        android:maxWidth="310dp"
+        android:maxHeight="540dp"
+        android:minHeight="30dp">
+
+        <TextView
+            android:id="@+id/sample_sender_sender_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="17dp"
+            android:inputType="textLongMessage|textMultiLine"
+            android:maxWidth="270dp"
+            android:minWidth="50dp"
+            android:text="laosajdlsakjdlksadjlklaksdkas" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sample_sender_sender_text"
+            android:text="12:56 pm"
+            android:layout_marginBottom="3dp"
+            android:id="@+id/sample_sender_time"
+            android:textSize="10sp"
+            android:layout_marginLeft="-60dp"
+            android:layout_toRightOf="@+id/sample_sender_sender_text"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

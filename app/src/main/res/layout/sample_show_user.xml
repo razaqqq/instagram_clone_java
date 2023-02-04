@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/sample_show_user_linear_horizontal"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:id="@+id/sample_show_user_circle_image"
+        android:src="@mipmap/ic_launcher_round"
+        android:layout_marginLeft="5dp"
+        android:padding="5dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Razaq Indra"
+            android:textSize="18sp"
+            android:id="@+id/sample_show_user_username"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sample_show_user_last_message"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:text="Last Message"
+            android:layout_centerVertical="true"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

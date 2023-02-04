@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+
+        <RelativeLayout
+            android:id="@+id/layout_mainfeed_list_item_rel_1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/layout_mainfeed_list_item_profile_image"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp"
+                app:civ_border_color="@color/black"
+                app:civ_border_width="0.5dp"
+                android:layout_toRightOf="@+id/layout_mainfeed_list_item_ic_more_vert"
+                />
+
+            <TextView
+                android:id="@+id/layout_mainfeed_list_item_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/layout_mainfeed_list_item_profile_image"
+                android:text="rzq1234"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/layout_mainfeed_list_item_ic_more_vert"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_baseline_more_vert_24" />
+
+
+        </RelativeLayout>
+
+                    <com.example.instagram_clone_2017.Utils.SquareImageView
+                        android:id="@+id/layout_mainfeed_list_item_post_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="400dp"
+                        android:layout_below="@+id/layout_mainfeed_list_item_rel_1"
+                        android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:id="@+id/layout_mainfeed_list_item_rel_2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/layout_mainfeed_list_item_post_image">
+
+            <RelativeLayout
+                android:id="@+id/layout_mainfeed_list_item_hearth_layout"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/layout_mainfeed_list_item_hearth_red"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/ic_heart_red"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/layout_mainfeed_list_item_heart_white"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/ic_hearth_white"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/layout_mainfeed_list_item_speech_buble"
+                android:layout_width="35dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/layout_mainfeed_list_item_hearth_layout"
+                android:src="@drawable/ic_speech_buble" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_mainfeed_list_item_rel_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_mainfeed_list_item_rel_2"
+            android:layout_marginBottom="50dp"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/layout_mainfeed_list_item_image_like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Liked by Razaq, Fuck You, Fuck You"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/layout_mainfeed_list_item_image_captions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_mainfeed_list_item_image_like"
+                android:layout_marginTop="15dp"
+                android:text="CAPTIONS"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/layout_mainfeed_list_item_comments_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_mainfeed_list_item_image_captions"
+                android:layout_marginTop="15dp"
+                android:text="View All 3 Comments"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/layout_mainfeed_list_item_time_postedk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_mainfeed_list_item_comments_link"
+                android:layout_marginTop="15dp"
+                android:text="3 DAYS AGO"
+                android:textColor="@color/grey"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+                </RelativeLayout>
+</RelativeLayout>

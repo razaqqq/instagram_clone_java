@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragment_chat_page_rel_1"
+        >
+
+        <include layout="@layout/snippet_fragment_chat_page_toolbar"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_view_comment_rel_2"
+        android:layout_below="@+id/fragment_chat_page_rel_1"
+        android:layout_marginTop="5dp"
+        android:layout_above="@+id/fragment_chat_page_rel_3"
+        android:layout_marginBottom="7dp"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/fragment_chat_page_rec_view_showing_chat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/fragment_chat_page_rel_3"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/white_gray_border_top"
+        >
+
+
+        <EditText
+            android:id="@+id/fragment_chat_pages_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toLeftOf="@+id/fragment_chat_page_check_mark"
+            android:background="@null"
+            android:hint="Add a comment ... "
+            android:padding="2dp"
+            android:textSize="14sp" />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_chechk"
+            android:layout_marginRight="7dp"
+            android:id="@+id/fragment_chat_page_check_mark"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>

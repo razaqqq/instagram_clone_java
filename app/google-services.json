@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "14122319383",
+    "firebase_url": "https://fir-appss-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "fir-appss",
+    "storage_bucket": "fir-appss.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:14122319383:android:5bd96a066355051510a652",
+        "android_client_info": {
+          "package_name": "com.example.instagram_clone_2017"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "14122319383-b3hh1fnptmqie39qpvqv1bs1bddaeppk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5tGnRtf8MYCJGqK3RShFLVEo8BiScZB4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "14122319383-b3hh1fnptmqie39qpvqv1bs1bddaeppk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
